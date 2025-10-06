@@ -22,6 +22,13 @@ export function SmoothScroll() {
   })
 
   useEffect(() => {
+    // Disable smooth scrolling on mobile devices for better performance
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768
+    
+    if (isMobile) {
+      return // Skip smooth scrolling on mobile
+    }
+
     const scroll = smoothScrollRef.current
     let isDestroyed = false
     let pendingHash: string | null = null

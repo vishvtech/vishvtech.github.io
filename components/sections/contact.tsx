@@ -14,12 +14,12 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" aria-labelledby="contact-title" className="mx-auto max-w-6xl px-4 py-20 md:py-24">
+    <section id="contact" aria-labelledby="contact-title" className="mx-auto max-w-6xl px-6 py-20 md:py-24">
       <ScrollAnimation className="text-center mb-12">
         <h2 id="contact-title" className="heading-secondary text-accent-glow mb-4">
           Ready to Innovate Together?
         </h2>
-        <p className="text-enhanced max-w-2xl mx-auto">
+        <p className="text-enhanced max-w-2xl mx-2 sm:mx-0">
           Share your challenge with us, and let's create the perfect technology solution for your needs.
         </p>
       </ScrollAnimation>
@@ -28,7 +28,7 @@ export function Contact() {
         <ScrollAnimation className="lg:col-span-2">
           <form
             onSubmit={submit}
-            className="scan-overlay rounded-xl p-8 bg-card/40 backdrop-blur-sm border border-border/30 neon-border"
+            className="scan-overlay rounded-xl p-8 bg-card/40 backdrop-blur-sm border border-border/30 neon-border mx-2 sm:mx-0"
           >
             <div className="grid gap-6">
               <div className="grid gap-3">
@@ -69,7 +69,7 @@ export function Contact() {
                   className="rounded-lg bg-background/50 backdrop-blur-sm border border-border/50 p-4 text-foreground placeholder:text-muted-foreground outline-none focus:border-accent-glow/50 focus:ring-2 focus:ring-accent-glow/20 transition-all duration-300 resize-none"
                 />
               </div>
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <button 
                   type="submit" 
                   className="neon-button rounded-lg px-8 py-4 text-base font-medium transition-all duration-300 hover:scale-105"
@@ -77,7 +77,7 @@ export function Contact() {
                 >
                   {status === "idle" ? "Send Message" : "Message Sent! ✓"}
                 </button>
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted-foreground text-center sm:text-right">
                   We'll respond within 24 hours
                 </span>
               </div>
@@ -87,7 +87,7 @@ export function Contact() {
 
         <ScrollAnimation delay={200}>
           <div className="space-y-6">
-            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 neon-border">
+            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 neon-border mx-2 sm:mx-0">
               <h3 className="font-semibold text-lg mb-4 text-accent-glow">Get in Touch</h3>
               <div className="space-y-4">
                 <div>
@@ -113,7 +113,7 @@ export function Contact() {
               </div>
             </div>
             
-            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 neon-border">
+            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 neon-border mx-2 sm:mx-0">
               <h3 className="font-semibold text-lg mb-3 text-accent-glow">What to Include</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">

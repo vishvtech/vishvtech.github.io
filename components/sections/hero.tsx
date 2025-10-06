@@ -24,12 +24,12 @@ export function Hero() {
         />
       </div>
       
-      <div className="mx-auto max-w-6xl px-4 py-20 flex flex-col items-center text-center gap-8">
-        <div className="flex items-center gap-4 animate-fade-in-up">
-          <NeonLogo size={64} className="pulse-neon" />
-          <div className="text-left">
-            <h2 className="text-2xl font-bold text-accent-glow">VishvTech</h2>
-            <p className="text-sm text-muted-foreground">Solving Tomorrow's Challenges Today</p>
+      <div className="mx-auto max-w-6xl px-6 py-20 flex flex-col items-center text-center gap-8">
+        <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in-up">
+          <NeonLogo size={48} className="pulse-neon" />
+          <div className="text-center sm:text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-accent-glow">VishvTech</h2>
+            <p className="text-xs sm:text-sm text-muted-foreground">Solving Tomorrow's Challenges Today</p>
           </div>
         </div>
 

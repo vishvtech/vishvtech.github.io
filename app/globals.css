@@ -52,6 +52,33 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
+/* Show scrollbars on mobile devices */
+@media (max-width: 767px) {
+  html {
+    scrollbar-width: auto; /* Firefox */
+    -ms-overflow-style: auto; /* IE and Edge */
+  }
+  
+  html::-webkit-scrollbar {
+    display: block; /* Chrome, Safari, Opera */
+    width: 6px;
+    height: 6px;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -97,6 +124,39 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+/* Allow normal scrolling on mobile devices */
+@media (max-width: 767px) {
+  html {
+    overflow-x: auto;
+  }
+  
+  body {
+    overflow-x: auto;
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .container-responsive {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container-responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container-responsive {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 @theme inline {

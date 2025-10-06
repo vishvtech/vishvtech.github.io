@@ -3,7 +3,7 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 function Card({ title, desc, icon }: { title: string; desc: string; icon: React.ReactNode }) {
   return (
-    <div className="scan-overlay rounded-xl p-6 border border-border/40 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 neon-border hover:scale-105 group">
+    <div className="scan-overlay rounded-xl p-6 border border-border/40 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 neon-border hover:scale-105 group mx-2 sm:mx-0">
       <div className="flex items-start gap-4">
         <div className="text-foreground/80 group-hover:scale-110 transition-transform duration-300">{icon}</div>
         <div>
@@ -76,8 +76,8 @@ export function Solutions() {
   ]
   
   return (
-    <section id="solutions" aria-labelledby="solutions-title" className="mx-auto max-w-6xl px-4 py-20 md:py-24">
-      <ScrollAnimation className="text-center mb-12">
+    <section id="solutions" aria-labelledby="solutions-title" className="mx-auto max-w-6xl px-6 py-20 md:py-24">
+      <ScrollAnimation className="text-center mb-12 mx-2 sm:mx-0">
         <h2 id="solutions-title" className="heading-secondary text-accent-glow mb-4">
           Our Technology Solutions
         </h2>

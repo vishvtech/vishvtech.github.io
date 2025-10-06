@@ -21,12 +21,12 @@ export function Why() {
   ]
   
   return (
-    <section id="why" aria-labelledby="why-title" className="mx-auto max-w-6xl px-4 py-20 md:py-24">
+    <section id="why" aria-labelledby="why-title" className="mx-auto max-w-6xl px-6 py-20 md:py-24">
       <ScrollAnimation className="text-center mb-12">
         <h2 id="why-title" className="heading-secondary text-accent-glow mb-4">
           Why Partner with VishvTech
         </h2>
-        <p className="text-enhanced max-w-2xl mx-auto">
+        <p className="text-enhanced max-w-2xl mx-2 sm:mx-0">
           The perfect blend of technical expertise and creative problem-solving
         </p>
       </ScrollAnimation>
@@ -34,7 +34,7 @@ export function Why() {
       <div className="grid gap-6 md:grid-cols-2">
         {bullets.map((item, index) => (
           <ScrollAnimation key={item.title} delay={index * 150}>
-            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 hover:border-border/60 transition-all duration-300 group hover:scale-105">
+            <div className="scan-overlay rounded-xl p-6 bg-card/40 backdrop-blur-sm border border-border/30 hover:border-border/60 transition-all duration-300 group hover:scale-105 mx-2 sm:mx-0">
               <div className="flex items-start gap-4">
                 <div 
                   className="mt-1 h-3 w-3 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300" 

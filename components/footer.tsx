@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="border-t border-border mt-12">
-      <div className="mx-auto max-w-6xl px-4 py-10 grid gap-4 sm:flex sm:items-center sm:justify-between">
+      <div className="mx-auto max-w-6xl px-6 py-10 grid gap-4 sm:flex sm:items-center sm:justify-between">
         <nav aria-label="Footer" className="flex gap-6 text-sm">
           <a href="#home" className="hover:neon-accent">
             Home

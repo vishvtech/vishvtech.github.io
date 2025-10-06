@@ -7,10 +7,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "VishvTech — Innovating Technology for a Smarter Tomorrow",
+  title: "VishvTech - Innovating Technology for a Smarter Tomorrow",
   description:
     "VishvTech creates tailored technology solutions — smart integration, custom systems, intelligent automation, and AI-driven problem solving.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
